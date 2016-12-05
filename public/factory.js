@@ -1,5 +1,7 @@
 var app = angular.module('currentsee');
 
+//Creates the Set and Get for information
+
 app.factory('wordsService', function(){
 	var userName = "";
 	var userAdjective = "";

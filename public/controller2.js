@@ -1,5 +1,7 @@
 var app = angular.module('currentsee');
 
+//Get information from factory and display on result view
+
 app.controller("resultController", function($scope, wordsService){
 	$scope.displayName = wordsService.getName();
 	$scope.displayAdjective = wordsService.getAdjective();

@@ -1,7 +1,7 @@
 var app = angular.module('currentsee');
 
 app.controller('formController', ["$scope", "wordsService", function($scope, wordsService){
-
+// Saves information from form data to factory
 	$scope.save = function(){
 		wordsService.saveName($scope.name);
 		wordsService.saveAdjective($scope.adjective);
