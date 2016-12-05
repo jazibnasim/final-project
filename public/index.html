@@ -1,9 +1,27 @@
 <!doctype html>
-<html>
-	<head>
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	</head>
-	<body>
-	<script src="script.js"></script>
-	</body>
+<html ng-app="currentsee">
+        <head>
+            <title>The Kitten's Story</title>
+
+
+        </head>
+                <body>
+                    <nav>
+                            <a href="#/form" class = "nav">Create</a>
+                            <span> l </span>
+                            <a href="#/result" class = "nav">Results</a>
+                    </nav>
+                            <div ng-view="">Loading...</div>
+
+                    <script src="lib/angular.min.js"></script>
+                    <script src="lib/angular-route.min.js"></script>
+                    <script src="scripts.js"></script>
+                    <script src="controller1.js"></script>
+                    <script src="controller2.js"></script>
+                    <script src="factory.js"></script>
+                    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+                    <link rel="stylesheet" type="text/css" href="button.css">
+
+
+                </body>
 </html>
