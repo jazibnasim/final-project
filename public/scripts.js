@@ -21,6 +21,10 @@ app.config(function($routeProvider) {
         templateUrl: "views/result.html",
         controller: 'resultController'
 });
+    $routeProvider.when("/about",{
+    	templateUrl: "views/about.html",
+    	controller: "aboutController"
+    });
 
 
 //Main Page View
