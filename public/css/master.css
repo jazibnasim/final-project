@@ -7,6 +7,17 @@ h1 {
     text-decoration: none;
     color: white; }
 
+a {
+  text-decoration: none; }
+
+h1 {
+  color: white;
+  text-decoration: none;
+  font-family: 'Bungee'; }
+  h1 span {
+    font-family: 'Gravitas One';
+    color: #12B266; }
+
 #resultslook {
   border-radius: 50px;
   background-color: #FF462B;
@@ -15,7 +26,9 @@ h1 {
 #formlook {
   border-radius: 50px;
   background-color: #FF462B;
-  margin: 25px auto 25px auto; }
-  #formlook form {
-    text-align: center;
-    padding: 50px auto 50px auto; }
+  margin: 25px auto 25px auto;
+  padding: 50px auto 50px auto; }
+  #formlook .formwrapper {
+    margin: 50px auto 50px auto; }
+    #formlook .formwrapper form {
+      text-align: center; }
