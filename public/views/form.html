@@ -1,42 +1,27 @@
-<body ng-controller="formController">
+
+			
 			
 
 
+				<div id = "formlook" ng-controller="formController">
+				<!--form for the user search-->
+					<form>
+						<h3> Name </h3>
 
-			<div id = "formLook">
-				<h3> Name </h3>
+						<input type = text ng-model = "name" />
 
-				<input type = text ng-model = "name" />
+						<h3> Location </h3>
 
-				<h3> Noun </h3>
+						<input type = text ng-model = "noun" />
 
-				<input type = text ng-model = "noun" />
-
-				<h3> Noun 2 </h3>
-
-				<input type = text ng-model = "noun2"/>
-
-				<h3> Adjective </h3>
-
-				<input type = text ng-model = "adjective"/>
-
-				<h3> Adjective 2</h3>
-
-				<input type = text ng-model = "adjective2"/>
-
-				<h3> Verb</h3>
-
-				<input type = text ng-model = "verb"/>
-
-				<h3> Verb 2</h3>
-
-				<input id = "loser" type = text ng-model = "verb2"/>
-
-				<!--<button class="button" ng-click="save()">Submit</button> -->
+				
+						<br>
+					<!--button to send results below-->
 
 
-				<button ng-click="save()" class="button button-3d button-box button-jumbo"><i class="fa fa-thumbs-up">Go!</i></button>
-
-				</div>
+						<button ng-click="save()" class="button button-3d button-box button-jumbo"><i class="fa fa-thumbs-up">Go!</i></button>
+					</form>
+				</div>	
+			
 
 </body>

@@ -1,2 +1,21 @@
+body {
+  background-color: #87EDBD; }
+
 h1 {
   text-align: center; }
+  h1 a {
+    text-decoration: none;
+    color: white; }
+
+#resultslook {
+  border-radius: 50px;
+  background-color: #FF462B;
+  margin: 25px auto 25px auto; }
+
+#formlook {
+  border-radius: 50px;
+  background-color: #FF462B;
+  margin: 25px auto 25px auto; }
+  #formlook form {
+    text-align: center;
+    padding: 50px auto 50px auto; }
