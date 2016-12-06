@@ -1,5 +1,14 @@
-var gulp = require('gulp');
+'use strict';
 
-gulp.task('default', function() {
-  // place code for your default task here
+var gulp = require('gulp');
+var Sass = require('gulp-Sass');
+
+gulp.task('Sass', function () {
+return gulp.src('./public/Sass/**/*.scss')
+.pipe(Sass().on('error', Sass.logError))
+.pipe(gulp.dest('./public/css'));
+});
+
+gulp.task('Sass:watch', function () {
+gulp.watch('./public/Sass/**/*.scss', ['Sass']);
 });

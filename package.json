@@ -46,7 +46,8 @@
   "dependencies": {},
   "deprecated": "To update or install node, go to http://nodejs.org/",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
   },
   "directories": {},
   "dist": {
