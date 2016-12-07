@@ -1,34 +1,32 @@
 body {
-  background-color: #87EDBD; }
-
-h1 {
-  text-align: center; }
-  h1 a {
-    text-decoration: none;
-    color: white; }
+  background-color: white; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #04ECFF; }
 
 h1 {
-  color: white;
+  text-align: center;
   text-decoration: none;
-  font-family: 'Bungee'; }
+  font-family: 'Gravitas One'; }
   h1 span {
     font-family: 'Gravitas One';
-    color: #12B266; }
+    color: #0d97ff; }
 
-#resultslook {
-  border-radius: 50px;
-  background-color: #FF462B;
-  margin: 25px auto 25px auto; }
+#view {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0d97ff; }
 
 #formlook {
-  border-radius: 50px;
-  background-color: #FF462B;
+  border: dotted black 1px;
   margin: 25px auto 25px auto;
   padding: 50px auto 50px auto; }
   #formlook .formwrapper {
+    border: dotted black 1px;
     margin: 50px auto 50px auto; }
     #formlook .formwrapper form {
       text-align: center; }
+  #formlook resultslook {
+    margin: 25px auto 25px auto; }
