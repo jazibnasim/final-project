@@ -4,7 +4,7 @@ body{
 
 a {
 	text-decoration: none;
-	color:#04ECFF;
+	color:#04D4E5;
 	}
 	
 h1{
@@ -25,26 +25,43 @@ h1{
 	background-color:#0d97ff;
 }
 
-#formlook{
+#form{
   	border:dotted black 1px;
+  	height:40vw;
 	margin:25px auto 25px auto;
  	padding:50px auto 50px auto;
 
- 	.formwrapper{
- 		border:dotted black 1px;
- 		margin:50px auto 50px auto;
+ 	form{
+ 	margin-top:2vw;
+ 	margin-left:auto;
+ 	margin-right:auto;
+	text-align:center;
 
- 		form{
- 		color:white;
-		text-align:center;
+		input{
+			font-size:2vw;
+			margin-top:5vw;
+			width:75%;
+			height:5vw;
 		}
 
- 	}
+		button{
+			color:white;
+			border:none;
+			background-color:#04D4E5;
+			font-size:2vw;
+			width:65%;
+			height:5vw;
+			margin-top:5vw;
+		}
+	}	
+ }
 	
-resultslook{
+#result{
+  	border:dotted black 1px;
+  	height:40vw;
 	margin:25px auto 25px auto;
+ 	padding:50px auto 50px auto;
+ }
 
-}
 
-}
 
