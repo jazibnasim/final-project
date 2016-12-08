@@ -9,7 +9,8 @@
         </head>
                 <body>
                 	<!--header and footer will remain static outside the views. this is a temp header. to be replaced by logo image. will link to form view-->
-                	<a href="#/form"><h1><span>current</span>SEE</h1></a>
+                	<a href="#/form"><h1><span>current</span>SEE<img src="/images/currentsee.png"></h1></a>
+
 
 
                     
@@ -20,10 +21,16 @@
                             <div id="view" ng-view=" ">Loading...</div>
 
                             <!--the footer will contain created by info, powered by api's info, the logo's for the apis, and a link to our about page-->
-                            <footer>
-                            <ul>
-                            </ul>
-                            </footer>
+                    
+                    <ul id="footer">
+                        <li id="creators">Created by: Jazib, Neal, and Katie</li>
+                        <li class="navlinks" id="google"><a href="#"></a><img src="/images/google.png"></li>
+                        <li class="navlinks" id="twitter"><a href="#"></a><img src="/images/twitter.png"></li>
+                        <li class="navlinks" id="powered">powered by</li>
+                        <li class="navlinks" id="about"><a href="#/about">About</a></li>
+
+                    </ul>
+                            
 
                     <script src="lib/angular.min.js"></script>
                     <script src="lib/angular-route.min.js"></script>
