@@ -6,6 +6,8 @@
 var app = angular.module("currentsee", ["ngRoute"]);
 
 
+
+
 // Creates the route
 app.config(function($routeProvider) {
 
@@ -91,6 +93,8 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
              }, function errorCallback(response){
                 console.log("Error", response);
        });
+
+      
 
 
 
