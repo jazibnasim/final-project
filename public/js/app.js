@@ -72,11 +72,14 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
     var searchWords = currentseeFactory.getsearchWords();
     console.log(searchWords);
 
+    var name = searchWords.name
+    var city = searchWords.city
+
     $http({
             method: 'GET',
             url:'https://maps.googleapis.com/maps/api/place/textsearch/json',
             params: {
-                'query': 'meijer',
+                'query': name + " " + city,
                 'key': 'AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y'
 
             }
