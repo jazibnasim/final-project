@@ -8,6 +8,8 @@ var app = angular.module("currentsee", ["ngRoute"]);
 
 
 
+
+
 // Creates the route
 app.config(function($routeProvider) {
 
@@ -74,27 +76,42 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
             method: 'GET',
             url:'https://maps.googleapis.com/maps/api/place/textsearch/json',
             params: {
-                'query': 'grandcircus',
+                'query': 'meijer',
                 'key': 'AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y'
 
             }
             }).then(function successCallback(response){
 
+               $scope.photos = [];
+
                 console.log("success", response);
-                var photoRef = response.data.results[0].photos[0].photo_reference
+                for(var i = 0; i <= 5; i++) {
+                  $scope.photos.push($scope.photosrc = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference="+response.data.results[i].photos[0].photo_reference+"&key=AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y");
+                }
+                console.log(testArray);
+                var photoRef = response.data.results[0].photos[0].photo_reference;
 
 
 
-                $scope.photosrc = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photoreference="+photoRef+"&key=AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y";
 
+                // for(i=0; i < 6; i++) {
+                //   var photoRef = response.data.results[i].photos[0].photo_reference
+                //   $scope.photosrc = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference="+photoRef+"&key=AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y";
+                //
+                //   function(randomPhoto){
+                //
+                //   $scope.photos.push(randomPhoto);
+                // };
 
 
 
              }, function errorCallback(response){
                 console.log("Error", response);
+
+              $scope.photos = []
        });
 
-      
+
 
 
 

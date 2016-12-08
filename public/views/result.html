@@ -3,7 +3,11 @@
 
 				<div id="result" ng-controller="resultController">
 
-					<img src="{{photosrc}}">
+						<div id="picture" ng-repeat="photo in photos">
+
+								<img ng-src="{{photo}}">
+
+						</div>
 
 				</div>
 
