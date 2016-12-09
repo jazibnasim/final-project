@@ -131,4 +131,14 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
 
 
 
+
+
 });
+
+var resultTweet = '';
+
+$.get('/api/tweets', function(data){
+  resultTweet = data;
+
+
+$("#container").html(resultTweet);
