@@ -96,18 +96,6 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
 
 
 
-
-                // for(i=0; i < 6; i++) {
-                //   var photoRef = response.data.results[i].photos[0].photo_reference
-                //   $scope.photosrc = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference="+photoRef+"&key=AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y";
-                //
-                //   function(randomPhoto){
-                //
-                //   $scope.photos.push(randomPhoto);
-                // };
-
-
-
              }, function errorCallback(response){
                 console.log("Error", response);
 

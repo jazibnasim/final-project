@@ -5,8 +5,16 @@
 
 						<div id="picture" ng-repeat="photo in photos">
 
-								<img ng-src="{{photo}}">
+								<img class="googleimages" ng-src="{{photo}}">
 
+						</div>
+						<div id="tweet"  ng-repeat="tweet in tweets">
+						<blockquote>
+								{{tweet.user}}
+							<p>
+								{{tweet.tweet}}
+							</p>
+						</blockquote>
 						</div>
 
 				</div>

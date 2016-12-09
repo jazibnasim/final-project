@@ -1,4 +1,4 @@
-var twitter =[
+var tweets =[
 {
 	"user": "detroitFood",
 	"tweet": "Detroit has the best shawarma ever",
