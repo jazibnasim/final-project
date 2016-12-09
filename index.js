@@ -1,4 +1,4 @@
-var myModule = require('./resultTweet');
+var myModule = require('./public/tweets.js');
 
 //
 // var http = require('http');
@@ -25,7 +25,7 @@ var app = express();
 //});
 
 app.get('/api/tweets', function (req, res) {
-  res.send(myModule.random());
+  res.send(myModule.resultTweet());
 });
 
 //forward to index.html
