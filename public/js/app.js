@@ -53,18 +53,7 @@ app.controller('formController', function($scope, currentseeFactory, $location, 
     $location.path('/result');
     console.log(words);
    };
-  //  $http({
-  //       method: 'POST',
-  //       url:'https://api.twitter.com/oauth2/token'
-  //       header: {
-  //           'Content-Type': 'application/x-www-form-urlencoded',
-  //           'Authorization': 'Basic ZTRkUGxKck5scEpGQ2pQa2ZCNllMZWd6MzowQ2hOMVBTb0pBOGNFY1pKUDFSTG9BQ0QwSG5HSG80NVRvSzBQT0RDRUNLZlJJVFBsYg=='
-  //       }
-  //       }).then(function successCallback(response){
-  //           console.log("success", response);
-  //        }, function errorCallback(response){
-  //           console.log("Error", response);
-  //  });
+
 });
 
 app.controller('resultController', function($scope, currentseeFactory, $http){
