@@ -108,6 +108,10 @@ h1{
 	margin:0vw auto 0vw auto;
  	padding:50px auto 50px auto;
 
+	#picture{
+		display:inline-block;
+	}
+
  	.googleimages{
  		display:inline-block;
  		width:10vw;
@@ -139,5 +143,15 @@ h1{
 }
  }
 
+#aboutview{
+	
+	h2{
+	text-align:center;
+	}
 
+	.bios {
+		display:inline-block;
+	}
+
+}
 
