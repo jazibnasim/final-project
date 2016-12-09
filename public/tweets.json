@@ -1,0 +1,18 @@
+var twitter =[
+{
+	"user": "detroitFood",
+	"tweet": "Detroit has the best shawarma ever",
+},
+{
+	"user": "whaleWatching5",
+	"tweet": "Slows BBQ has some amazing BBQ ribs yo",
+},
+{
+	"user": "DcityDMoney",
+	"tweet": "Grand Circus looks like a dope place to learn to code!"
+},
+{
+	"user": "FrontEndDev",
+	"tweet": "Building a better Detroit through JS and CSS *highfive*"
+}
+]
