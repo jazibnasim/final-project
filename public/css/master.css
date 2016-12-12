@@ -53,7 +53,7 @@ h1 {
       width: 3vw; }
 
 #view {
-  width: 75%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -68,17 +68,17 @@ h1 {
     margin-right: auto;
     text-align: center; }
     #form form input {
-      font-size: 2vw;
+      font-size: 1.5vw;
       margin-top: 5vw;
-      width: 75%;
-      height: 5vw; }
+      width: 70%;
+      height: 4vw; }
     #form form button {
       color: white;
       border: none;
       background-color: #04D4E5;
       font-size: 2vw;
-      width: 65%;
-      height: 5vw;
+      width: 70%;
+      height: 4vw;
       margin-top: 5vw;
       margin-bottom: 5vw; }
 
