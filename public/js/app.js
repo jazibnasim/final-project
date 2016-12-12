@@ -77,7 +77,7 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
                $scope.photos = [];
 
                 console.log("success", response);
-                for(var i = 0; i <= 5; i++) {
+                for(var i = 0; i <= 6; i++) {
                   $scope.photos.push($scope.photosrc = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference="+response.data.results[i].photos[0].photo_reference+"&key=AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y");
                 }
                 // console.log(testArray);
@@ -91,42 +91,5 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
               $scope.photos = []
        });
 
-       $http({
-               method: 'GET',
-               url:'/tweets.json',
-               }).then(function successCallback(response){
 
-
-
-                   console.log("success", response);
-                   for(var i = 0; i <= 5; i++) {
-                     if (tweets.user[i]=== name) {
-                       $scope.tweets.push(tweets[i]);
-                     }
-
-                   }
-                   // console.log(testArray);
-                   // var photoRef = response.data.results[0].photos[0].photo_reference;
-
-
-
-                }, function errorCallback(response){
-                   console.log("Error", response);
-
-                 $scope.tweets = []
-          });
-
-
-
-
-
-
-
-});
-
-var resultTweet = '';
-
-$.get('/api/tweets', function(data){
-  resultTweet = data;
-$("#tweet").html(resultTweet);
 });
