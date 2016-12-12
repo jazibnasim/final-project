@@ -24,7 +24,7 @@ h1 {
 
 #footer {
   margin-bottom: 0px;
-  background-color: white;
+  background-color: rgba(255,255,255, 0.7);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -32,17 +32,17 @@ h1 {
   #footer #google {
     margin-right: 90px; }
   #footer #creators {
-    margin-top: 25px;
+    margin-top: 15px;
     font-family: sans-serif;
     color: #0d97ff;
     display: inline-block;
     float: left; }
   #footer #about {
-    margin-top: 25px; }
+    margin-top: 15px;}
   #footer #powered {
-    margin-top: 25px; }
+    margin-top: 15px; }
   #footer .navlinks {
-    margin-top: 5px;
+    margin-top: 3px;
     font-family: sans-serif;
     margin-right: 2vw;
     color: #0d97ff;
