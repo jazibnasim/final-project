@@ -90,6 +90,31 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
 
               $scope.photos = []
        });
+      $http({
+            method: 'GET',
+            url:'http://localhost:3000/tweets',
+            params: {
+                name: "Katoi",
+                city: "Detroit"
 
+            }
+            }).then(function successCallback(response){
+
+               $scope.tweets = [];
+
+                console.log("twitter", response);
+                for(var i = 0; i <= 6; i++) {
+                 // $scope.tweets.push( = ;
+                }
+                // console.log(testArray);
+                // var photoRef = response.data.results[0].photos[0].photo_reference;
+
+
+
+             }, function errorCallback(response){
+                console.log("Error", response);
+
+              $scope.photos = []
+       });
 
 });
