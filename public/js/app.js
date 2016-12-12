@@ -64,38 +64,38 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
     var name = searchWords.name
     var city = searchWords.city
 
-    // $http({
-    //         method: 'GET',
-    //         url:'https://maps.googleapis.com/maps/api/place/textsearch/json',
-    //         params: {
-    //             'query': name + " " + city,
-    //             'key': 'AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y'
+    $http({
+            method: 'GET',
+            url:'https://maps.googleapis.com/maps/api/place/textsearch/json',
+            params: {
+                'query': name + " " + city,
+                'key': 'AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y'
 
-    //         }
-    //         }).then(function successCallback(response){
+            }
+            }).then(function successCallback(response){
 
-    //            $scope.photos = [];
+               $scope.photos = [];
 
-    //             console.log("success", response);
-    //             for(var i = 0; i <= 6; i++) {
-    //               $scope.photos.push($scope.photosrc = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference="+response.data.results[i].photos[0].photo_reference+"&key=AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y");
-    //             }
-    //             // console.log(testArray);
-    //             // var photoRef = response.data.results[0].photos[0].photo_reference;
+                console.log("success", response);
+                for(var i = 0; i <= 6; i++) {
+                  $scope.photos.push($scope.photosrc = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference="+response.data.results[i].photos[0].photo_reference+"&key=AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y");
+                }
+                // console.log(testArray);
+                // var photoRef = response.data.results[0].photos[0].photo_reference;
 
 
 
-    //          }, function errorCallback(response){
-    //             console.log("Error", response);
+             }, function errorCallback(response){
+                console.log("Error", response);
 
-    //           $scope.photos = []
-    //    });
+              $scope.photos = []
+       });
       $http({
             method: 'GET',
             url:'http://localhost:3000/tweets',
             params: {
-                name: "Katoi",
-                city: "Detroit"
+                name: name ,
+                city: city
 
             }
             }).then(function successCallback(response){
