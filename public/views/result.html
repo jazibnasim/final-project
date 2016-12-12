@@ -5,15 +5,16 @@
 
 						<div id="picture" ng-repeat="photo in photos">
 
-								<img class="googleimages" ng-src="{{photo}}">
+								<a href="{{photo}}"><img class="googleimages" ng-src="{{photo}}"></a>
 
 						</div>
 						<div id="tweet"  ng-repeat="tweet in tweets">
 						<blockquote>
-								{{tweet.user}}
+								<h3>{{tweet.screen_name}}</h3>
 							<p>
-								{{tweet.tweet}}
+								{{tweet.text}}
 							</p>
+							{{tweet.created_at}}
 						</blockquote>
 						</div>
 
