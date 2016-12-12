@@ -104,7 +104,8 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
 
                 console.log("twitter", response);
                 for(var i = 0; i <= 6; i++) {
-                 // $scope.tweets.push( = ;
+                  $scope.tweets.push($scope = response.data.statuses[0].created_at + " " + response.data.statuses[2].text + " " +
+                    response.data.statuses[2].user.screen_name + " " + response.data.statuses[2].user.profile_image_url);
                 }
                 // console.log(testArray);
                 // var photoRef = response.data.results[0].photos[0].photo_reference;
@@ -114,7 +115,7 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
              }, function errorCallback(response){
                 console.log("Error", response);
 
-              $scope.photos = []
+              $scope.tweets = []
        });
 
 });
