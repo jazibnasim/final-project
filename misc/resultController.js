@@ -57,6 +57,7 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
 
             function getTweetsComplete(response) {
                 return response.data;
+                console.log response.data;
             }
 
             function getTweetsFailed(error) {
