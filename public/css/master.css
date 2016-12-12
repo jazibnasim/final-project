@@ -90,10 +90,11 @@ h1 {
     display: inline-block; }
   #result .googleimages {
     display: inline-block;
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    /*height: 15vw;*/
     overflow: hidden;
-    margin: 20px; }
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   #result blockquote {
     display: inline-block;
     font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
