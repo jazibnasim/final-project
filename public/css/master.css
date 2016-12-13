@@ -97,11 +97,13 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   #result blockquote {
     display: inline-block;
+    color:grey;
     font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
     font-size: 12px;
     font-weight: bold;
     line-height: 16px;
-    border-color: #eee #ddd #bbb;
+    background-color:white;
+    border-color:#04D4E5;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
