@@ -114,8 +114,27 @@ h1 {
     font-weight: normal;
     line-height: 20px; }
 
+#aboutview {
+  height: 36vw;
+  margin: 0vw auto 0vw auto;
+  padding: 50px auto 50px auto;
+  color: white;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
 #aboutview h2 {
-  text-align: center; }
+  text-align: center;
+  font-size: 2em;}
 
 #aboutview .bios {
-  display: inline-block; }
+  /*display: inline-block;*/
+  margin: auto;
+  width: 70%
+ }
+
+.bio-image {
+  border-radius: 1000px;
+  width: 70%;
+  box-shadow: inset 0px 0px 10px 0px #ABABAB;
+  -webkit-box-shadow: inset 0px 0px 10px 0px #ABABAB;
+}
