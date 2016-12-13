@@ -92,7 +92,7 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
        });
       $http({
             method: 'GET',
-            url:'http://localhost:3000/tweets',
+            url:'/tweets',
             params: {
                 name: name ,
                 city: city
