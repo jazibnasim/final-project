@@ -85,13 +85,15 @@ h1 {
 #result {
   height: 36vw;
   margin: 0vw auto 0vw auto;
-  padding: 50px auto 50px auto; }
+  padding: 50px auto 50px auto;
+  overflow-y:scroll; }
   #result #picture {
     display: inline-block; }
   #result .googleimages {
+    vertical-align: middle;
+    border:solid white 3px;
     display: inline-block;
-    width: 15vw;
-    /*height: 15vw;*/
+    width: 14vw;                                                          
     overflow: hidden;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -107,10 +109,13 @@ h1 {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     margin: 10px 5px;
-    padding: 0 16px 16px 16px;
+    padding: 16px 16px 16px 16px;
     max-width: 468px; }
+  #result blockquote img{
+    border-radius: 5px;
+  } 
   #result p {
     font-size: 16px;
     font-weight: normal;

@@ -111,6 +111,13 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
                 }, function errorCallback(response){
                 console.log("Error", response);
                 //put twitter results into tweets array
+
                $scope.tweets = [];
          });
 });
+
+              $scope.tweets = [];
+       });
+
+});
+
