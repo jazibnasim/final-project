@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var Sass = require('gulp-Sass');
+var imagemin = require('gulp-imagemin')
 
 gulp.task('Sass', function () {
 return gulp.src('./public/Sass/**/*.scss')
@@ -12,3 +13,5 @@ return gulp.src('./public/Sass/**/*.scss')
 gulp.task('Sass:watch', function () {
 gulp.watch('./public/Sass/**/*.scss', ['Sass']);
 });
+
+
