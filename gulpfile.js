@@ -1,5 +1,5 @@
 'use strict';
-
+//imagemin makes the file smaller and the image load faster
 var gulp = require('gulp');
 var Sass = require('gulp-Sass');
 var imagemin = require('gulp-imagemin')
