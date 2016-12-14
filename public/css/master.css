@@ -117,16 +117,35 @@ h1 {
     line-height: 20px; }
 
 #aboutview {
-  height: 36vw;
+  height: 50%;
   margin: 0vw auto 0vw auto;
   padding: 50px auto 50px auto;
+
   color: white;
+  background-color: rgba(255,255,255, 0.5);
   font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
 }
 
 #aboutview h2 {
+  position: relative;
+  top: 10px;
   text-align: center;
   font-size: 2em;}
+
+  #aboutview h3 {
+    text-align: center;
+    font-size: 3vw;
+    position:relative;
+    bottom:30px;
+    left:0px;
+    visibility:hidden;
+  }}
+
+  .bio-images:hover h3 {
+    visibility:visible;
+}
+
+
 
 #aboutview .bios {
   /*display: inline-block;*/
@@ -137,6 +156,23 @@ h1 {
 .bio-image {
   border-radius: 1000px;
   width: 70%;
-  box-shadow: inset 0px 0px 10px 0px #ABABAB;
-  -webkit-box-shadow: inset 0px 0px 10px 0px #ABABAB;
+  margin-left: 15%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.github-image, .linkedin-image{
+  width: 40%;
+
+}
+
+.social {
+  position: relative;
+  top: 10px;
+  width: 20%;
+  margin: auto;
+}
+
+.bio-image:hover {
+  background-color: white;
+  opacity:0.5;
 }
