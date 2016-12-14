@@ -1,14 +1,5 @@
-
-
-
-
 //Module is setup here with ngRoute dependency injection
 var app = angular.module("currentsee", ["ngRoute"]);
-
-
-
-
-
 
 // Creates the route
 app.config(function($routeProvider) {
@@ -23,13 +14,13 @@ app.config(function($routeProvider) {
     });
 
 // Link to  Result View
-    $routeProvider.when("/result", {
+     $routeProvider.when("/result", {
         templateUrl: "views/result.html",
         controller: 'resultController'
 });
 
 // Link to about view
-    $routeProvider.when("/about",{
+     $routeProvider.when("/about",{
     	templateUrl: "views/about.html",
     	controller: "aboutController"
     });
@@ -38,7 +29,7 @@ app.config(function($routeProvider) {
 //Main Page View
 
 
-    $routeProvider.otherwise({
+     $routeProvider.otherwise({
         templateUrl: "views/form.html",
         controller: 'formController'
 
@@ -63,53 +54,42 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
     var name = searchWords.name
     var city = searchWords.city
 
-
 // Using http get method to retrieve data from google place photo api
     $http({
-
           //To reach the photos we need to use the place search api to get the photo reference ID
             method: 'GET',
             url:'https://maps.googleapis.com/maps/api/place/textsearch/json',
             params: {
-
               //variable name and city inserted into query for search term
                 'query': name + " " + city,
-
                 //Client authorization key
                 'key': 'AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y'
-
             }
             }).then(function successCallback(response){
-
                $scope.photos = [];
                //Once the photo reference ID is retrived, it's inserted into the second api to retrieve an image url for our results view
                 console.log("success", response);
-
                 // Our for loop limits the images to first 6 results and pushes to the photos array
                 for(var i = 0; i <= 6; i++) {
                   $scope.photos.push($scope.photosrc = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=350&photoreference="+response.data.results[i].photos[0].photo_reference+"&key=AIzaSyCTKPL7rYEGDsf6NT_AFO8991Gb9QY3C-Y");
                 }
                 // console.log(testArray);
                 // var photoRef = response.data.results[0].photos[0].photo_reference;
-
-
                 //Responds with error
              }, function errorCallback(response){
                 console.log("Error", response);
 
-              $scope.photos = []
+                 $scope.photos = []
        });
             //copy and paste above $http function. changed params and url
-      $http({
+    $http({
             method: 'GET',
             url:'/tweets',
             params: {
                 name: name ,
                 city: city
-
             }
             }).then(function successCallback(response){
-
                $scope.tweets = [];
 
                 console.log("twitter", response);
@@ -120,18 +100,17 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
                     { created_at:response.data.statuses[i].created_at,
                       text: response.data.statuses[i].text,
                       screen_name: response.data.statuses[i].user.screen_name,
-                      profile_image_url: response.data.statuses[i].user.profile_image_url}
-                    );
+                      profile_image_url: response.data.statuses[i].user.profile_image_url
+                    }
+                  );
                 }
                 // console.log(testArray);
                 // var photoRef = response.data.results[0].photos[0].photo_reference;
                 console.log("my scope.tweets is", $scope.tweets);
-
-
-             }, function errorCallback(response){
+                
+                }, function errorCallback(response){
                 console.log("Error", response);
                 //put twitter results into tweets array
-              $scope.tweets = [];
-       });
-
+               $scope.tweets = [];
+         });
 });
