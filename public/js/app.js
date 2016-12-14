@@ -107,7 +107,7 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
                 // console.log(testArray);
                 // var photoRef = response.data.results[0].photos[0].photo_reference;
                 console.log("my scope.tweets is", $scope.tweets);
-                
+
                 }, function errorCallback(response){
                 console.log("Error", response);
                 //put twitter results into tweets array
@@ -115,9 +115,3 @@ app.controller('resultController', function($scope, currentseeFactory, $http){
                $scope.tweets = [];
          });
 });
-
-              $scope.tweets = [];
-       });
-
-});
-
