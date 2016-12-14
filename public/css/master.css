@@ -8,7 +8,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #04D4E5; }
+   }
+
+#see{
+  color: #04D4E5;
+}
 
 h1 {
   font-size: 3vw;
@@ -31,16 +35,13 @@ h1 {
   list-style-type: none; }
   #footer #google {
     margin-right: 90px; }
-  #footer #creators {
-    margin-top: 15px;
-    font-family: sans-serif;
-    color: #0d97ff;
-    display: inline-block;
-    float: left; }
   #footer #about {
-    margin-top: 15px;}
+    margin-top: 15px;
+    text-shadow: 2px 2px 15px  #000000;}
   #footer #powered {
-    margin-top: 15px; }
+    margin-top: 15px;
+    color: white;
+    text-shadow: 2px 2px 15px  #000000; }
   #footer .navlinks {
     margin-top: 3px;
     font-family: sans-serif;
@@ -51,6 +52,10 @@ h1 {
     #footer .navlinks img {
       height: 3vw;
       width: 3vw; }
+
+#about-text {
+  color: white;
+}
 
 #view {
   width: 50%;
@@ -93,7 +98,7 @@ h1 {
     vertical-align: middle;
     border:solid white 3px;
     display: inline-block;
-    width: 14vw;                                                          
+    width: 14vw;
     overflow: hidden;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -109,13 +114,13 @@ h1 {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px 5px;
     padding: 16px 16px 16px 16px;
     max-width: 468px; }
   #result blockquote img{
     border-radius: 5px;
-  } 
+  }
   #result p {
     font-size: 16px;
     font-weight: normal;
