@@ -61,7 +61,7 @@ h1 {
 
 #view {
   width: 50%;
-  margin-bottom: 7%;
+  margin-bottom:5%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -131,6 +131,7 @@ h1 {
 
 #aboutview {
   margin: 0vw auto 0vw auto;
+  margin-bottom:5%;
   padding: 50px auto 50px auto;
   color: white;
   background-color: rgba(255,255,255, 0.5);
@@ -146,8 +147,10 @@ h1 {
   #aboutview h3 {
     text-align: center;
     font-size: 3vw;
+    margin-bottom: 7px;
+}
 
-  }
+
 
 #group-image {
   width: 100%;
@@ -163,10 +166,13 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  position: relative;
+  bottom: 15px;
 
  }
 
 .bio-image {
+  border: white 1px solid;
   border-radius: 1000px;
   width: 70%;
   margin-left: 15%;
