@@ -12,9 +12,11 @@ a {
 
 #see{
   color: #04D4E5;
+
 }
 
 h1 {
+
   font-size: 3vw;
   text-align: center;
   text-decoration: none;
@@ -36,10 +38,10 @@ h1 {
   #footer #google {
     margin-right: 90px; }
   #footer #about {
-    margin-top: 15px;
+    margin-top: 1%;
     text-shadow: 2px 2px 15px  #000000;}
   #footer #powered {
-    margin-top: 15px;
+    margin-top: 1%;
     color: white;
     text-shadow: 2px 2px 15px  #000000; }
   #footer .navlinks {
@@ -59,6 +61,7 @@ h1 {
 
 #view {
   width: 50%;
+  margin-bottom: 7%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -115,7 +118,7 @@ h1 {
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: auto;;
+    margin: auto;
     padding: 16px 16px 16px 16px;
     max-width: 468px; }
   #result blockquote img{
@@ -127,10 +130,8 @@ h1 {
     line-height: 20px; }
 
 #aboutview {
-  height: 50%;
   margin: 0vw auto 0vw auto;
   padding: 50px auto 50px auto;
-
   color: white;
   background-color: rgba(255,255,255, 0.5);
   font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
@@ -148,14 +149,21 @@ h1 {
 
   }
 
+#group-image {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
 
 
 
 
 #aboutview .bios {
   /*display: inline-block;*/
-  margin: auto;
-  width: 70%
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+
  }
 
 .bio-image {
@@ -175,9 +183,4 @@ h1 {
   top: 10px;
   width: 20%;
   margin: auto;
-}
-
-.bio-image:hover {
-  background-color: white;
-  opacity:0.5;
 }
